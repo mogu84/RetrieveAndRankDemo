@@ -1,0 +1,17 @@
+RANKER_ID=<<INSERT_RANKER_ID_AS_GENERATED_BY_SETUP_PROCESS>>
+COLLECTION=<<INSERT_YOUR_COLLECTION_NAME>>
+RANKER_NAME=<<ranker_name>>
+SOLR_CLUSTER_ID=this_will_be_set_by_the_program
+#The location of your training data file.
+TRAINING_DATA_PATH=res/training_data.csv
+
+# MUST HAVE BEFORE RUNNING DATA
+# VCAP_SERVICES is the IBM Bluemix Retrieve And Rank service credentials (the whole text in JSON-format).
+VCAP_SERVICES={"NAME_OF_THE_RNR_SERVICE" \: [{ "credentials"\: { "url"\: "https\://gateway.watsonplatform.net/retrieve-and-rank/api/", "password"\: "RANDOM_GENERATED_STRING", "username"\: "RANDOM_GENERATED_STRING" } } ] }
+CLUSTER_SIZE=1
+CLUSTER_NAME=<<INSERT_NAME_FOR_THE_CLUSTER>>
+#This is the path for the SOLR-configuration files (packed in a zip-file)
+CONFIG_PATH=src/main/resources/solr_config
+CONFIG_NAME=solr_config
+SOLR_CONFIGURATION_NAME_1=solr_config
+
